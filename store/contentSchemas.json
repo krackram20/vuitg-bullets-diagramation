@@ -4,19 +4,28 @@
       "type": "array",
       "title": "Bullets Group",
       "items": {
-        "image": {
-          "$ref": "app:vtex.native-types#/definitions/url",
-          "default": "",
-          "title": "Imagen",
-          "widget": {
-            "ui:widget": "image-uploader"
+        "properties": {
+          "image": {
+            "$ref": "app:vtex.native-types#/definitions/url",
+            "default": "",
+            "title": "Imagen",
+            "widget": {
+              "ui:widget": "image-uploader"
+            }
+          },
+          "titleBullet":{
+            "title": "Link de Bullet",
+            "$ref": "app:vtex.native-types#/definitions/text",
+            "default": ""
+          },
+
+          "link ": {
+            "title": "link de bullet",
+            "$ref": "app:vtex.native-types#/definitions/link",
+            "default": ""
           }
-        },
-        "titleBullet":{
-          "title": "Link de Bullet",
-          "$ref": "app:vtex.native-types#/definitions/text",
-          "default": ""
-        }
+       }
+
       }
     }
   }
